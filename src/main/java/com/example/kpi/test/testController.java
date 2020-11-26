@@ -10,7 +10,7 @@ import java.util.Date;
 @Controller
 public class testController {
 
-    @GetMapping("/kpi_test")
+    @GetMapping("/jenkins_test")
     public String test(ModelMap model) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
 
