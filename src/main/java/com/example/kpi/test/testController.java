@@ -10,8 +10,8 @@ import java.util.Date;
 @Controller
 public class testController {
 
-    @GetMapping("/jenkins_test")
-    public String test(ModelMap model) {
+    @GetMapping("/user/main")
+    public String main(ModelMap model) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
 
         Date today = new Date();
@@ -19,6 +19,6 @@ public class testController {
 
         model.addAttribute("now", now);
 
-        return "test";
+        return "main";
     }
 }
