@@ -10,15 +10,15 @@ import java.util.Date;
 @Controller
 public class testController {
 
-    @GetMapping("/user/main")
+    @GetMapping("/main")
     public String main(ModelMap model) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
+        /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 HH시 mm분 ss초");
 
         Date today = new Date();
         String now = sdf.format(today);
 
         model.addAttribute("now", now);
-
-        return "main";
+*/
+        return "content/main";
     }
 }
